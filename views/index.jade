@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  form(id="login")
+    h1 Login
+    input(type="text" name="username" value="")
+    input(type="submit" value="Login")
+
+  section(id="messages")
+    div
+      audio(id="audio")
+        source
+      button(id="enable") Enable Audio
+      button(id="disable") Disable Audio
+
+    button(id="leave") Leave Conversation
+    h1 Messages
+
+    div(id="messageFeed")
+
+    textarea(id="messageTextarea")
+    br
+    button(id="send") Send
+
+  section(id="conversations")
+    form(id="call-form")
+      h1 Call User
+      input(type="text" name="username" value="")
+      input(type="submit" value="Call")
+    div(id="call-controls")
+      span(id="call-members") You are in a call with
+      button(id="hang-up") Hang Up
+
+    h1 Conversations

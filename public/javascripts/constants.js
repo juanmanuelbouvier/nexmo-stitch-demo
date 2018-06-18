@@ -1,0 +1,7 @@
+let APPLICATION_ID;
+let PRIVATE_KEY;
+
+module.exports = {
+    APPLICATION_ID: APPLICATION_ID,
+    PRIVATE_KEY: PRIVATE_KEY
+};

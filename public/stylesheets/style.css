@@ -1,0 +1,24 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#login,
+#messages {
+  width: 80%;
+  height: 300px
+}
+#messages {
+  display: none
+}
+#conversations {
+  display: none
+}
+
+#call-controls {
+  display: none;
+}
+
+a {
+  color: #00B7FF;
+}
