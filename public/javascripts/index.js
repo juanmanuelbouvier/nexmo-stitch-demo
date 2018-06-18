@@ -146,7 +146,7 @@ class ChatApp {
                 this.app = app
 
                 app.on("member:call", (member, call) => {
-                    if (window.confirm(`Incoming call from ${member.user.name}. Do you want to answer?`)) {
+                    if (window.confirm(`Incoming call from ${member.invited_by}. Do you want to answer?`)) {
                         this.call = call
                         call.answer().then((stream) => {
                             this.setupAudioStream(stream)
