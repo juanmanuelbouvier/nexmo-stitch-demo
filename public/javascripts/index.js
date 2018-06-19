@@ -54,7 +54,7 @@ class ChatApp {
         this.callMembers.textContent = this.callMembers.textContent + " " + member.invited_by || member.user.name
     }
     authenticate(username) {
-        return username.toLowerCase() === "juanma" ? USER_JWT : SECOND_USER_JWT
+        return username.toLowerCase() === "diego" ? USER_JWT : SECOND_USER_JWT
     }
     showConversationHistory(conversation) {
         conversation.getEvents().then((events) => {
